@@ -43,7 +43,7 @@ window.SITE = {
 
      This key is designed to sit in public page source. It only permits
      delivery to the address you registered, so it is safe to publish. */
-  formAccessKey: '',
+  formAccessKey: 'd0e88e01-b080-4a3b-a16b-3b384715d120',
 
   /* --- the acquisition mandate ------------------------------------------ */
   ebitdaRange: '$500,000 to $2,000,000',
