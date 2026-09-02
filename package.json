@@ -1,0 +1,12 @@
+{
+  "name": "gatepost-partners-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gatepost Partners investment vehicle website. Static site with a zero-dependency local dev server.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "build": "node build.mjs"
+  }
+}

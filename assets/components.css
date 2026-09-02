@@ -1,0 +1,278 @@
+/* ===========================================================================
+   REUSABLE PIECES
+   ---------------------------------------------------------------------------
+   Plain CSS for the elements that repeat: buttons, form fields, the small
+   uppercase labels above each section. Edit a rule here and every button (or
+   field, or label) on the site changes at once.
+
+   Colors come from assets/theme.js. `var(--brass-700)` means "whatever
+   brass-700 is set to in the theme file", and the hex after the comma is a
+   fallback.
+   =========================================================================== */
+
+/* --- page basics --------------------------------------------------------- */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--brass-200, #E9DDBE);
+  color: var(--moss-900, #16211B);
+}
+
+/* --- the small uppercase label above each section headline --------------- */
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--brass-700, #7A5C21);
+}
+
+.eyebrow-light {
+  color: var(--brass-300, #D9C591);
+}
+
+/* --- section headlines --------------------------------------------------- */
+/* Serif, sentence case, generous line height. Sizes are set per-use in the
+   HTML so a short heading and a long one can be tuned separately.          */
+
+.h-section {
+  font-family: Bitter, Rockwell, Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.012em;
+  line-height: 1.16;
+  color: var(--moss-900, #16211B);
+  text-wrap: balance;
+}
+
+.h-sub {
+  font-family: Bitter, Rockwell, Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+  color: var(--moss-900, #16211B);
+}
+
+/* --- buttons ------------------------------------------------------------- */
+/* Softly rounded, sentence case. Every variant shares this shape, so
+   `class="btn-primary"` is all the HTML needs.                             */
+
+.btn,
+.btn-primary,
+.btn-dark,
+.btn-ghost,
+.btn-onDark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 4px;
+  padding: 0.85rem 1.6rem;
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  line-height: 1.2;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn-primary:focus,
+.btn-dark:focus,
+.btn-ghost:focus,
+.btn-onDark:focus {
+  outline: none;
+}
+
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.btn-dark:focus-visible,
+.btn-ghost:focus-visible,
+.btn-onDark:focus-visible {
+  outline: 2px solid var(--brass-500, #B08F3C);
+  outline-offset: 3px;
+}
+
+/* deep green, the main action */
+.btn-primary {
+  background-color: var(--moss-800, #1E2E25);
+  color: var(--stone-50, #FCFBF7);
+}
+.btn-primary:hover {
+  background-color: var(--moss-700, #294036);
+}
+
+/* same weight, used where two dark buttons would compete */
+.btn-dark {
+  background-color: var(--moss-900, #16211B);
+  color: var(--stone-50, #FCFBF7);
+}
+.btn-dark:hover {
+  background-color: var(--moss-700, #294036);
+}
+
+/* outlined, for quieter actions on light grounds */
+.btn-ghost {
+  border: 1px solid var(--stone-300, #DED7C4);
+  background-color: transparent;
+  color: var(--moss-900, #16211B);
+}
+.btn-ghost:hover {
+  border-color: var(--moss-800, #1E2E25);
+  background-color: var(--moss-800, #1E2E25);
+  color: var(--stone-50, #FCFBF7);
+}
+
+/* cream on the dark sections, the way an inverted CTA should read */
+.btn-onDark {
+  background-color: var(--stone-100, #F6F3EA);
+  color: var(--moss-900, #16211B);
+}
+.btn-onDark:hover {
+  background-color: #fff;
+}
+
+/* --- form fields --------------------------------------------------------- */
+
+.field {
+  width: 100%;
+  border: 1px solid var(--stone-300, #DED7C4);
+  border-radius: 4px;
+  background-color: var(--stone-50, #FCFBF7);
+  padding: 0.8rem 0.9rem;
+  font-size: 15px;
+  color: var(--stone-900, #1C1B18);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.field::placeholder {
+  color: var(--stone-400, #B9B3A2);
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--moss-500, #47695A);
+  box-shadow: 0 0 0 3px var(--moss-50, #F1F6F3);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--stone-600, #625E56);
+}
+
+/* thin divider line */
+.rule {
+  height: 1px;
+  width: 100%;
+  background-color: var(--stone-200, #EDE8DA);
+}
+
+/* --- fade sections in as they scroll into view --------------------------- */
+/* Remove these two rules if you would rather everything appear instantly.   */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; }
+}
+
+/* --- printing ------------------------------------------------------------ */
+
+@media print {
+  header,
+  #contact form,
+  #booking,
+  .no-print {
+    display: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}
+
+/* --- card and column headings ------------------------------------------- */
+/* Serif for the smaller headings too, so the whole page reads as one voice.
+   Category labels stay Title Case; full-sentence headlines use .h-section.  */
+
+section h3 {
+  font-family: Bitter, Rockwell, Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  color: var(--moss-900, #16211B);
+}
+
+section h4 {
+  letter-spacing: 0.1em;
+}
+
+/* outlined, for use on photographic or dark grounds */
+.btn-onDarkGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 4px;
+  padding: 0.85rem 1.6rem;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.btn-onDarkGhost:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+.btn-onDarkGhost:focus { outline: none; }
+.btn-onDarkGhost:focus-visible {
+  outline: 2px solid var(--brass-300, #D9C591);
+  outline-offset: 3px;
+}
+
+/* --- nav over the photographic hero -------------------------------------- */
+/* At the top of the page the nav sits on the dark hero, so the mark, the
+   links and the button all invert. site.js adds .at-top while scrollY is 0.  */
+
+.mk-body  { fill: var(--moss-800, #1E2E25); }
+.mk-arrow { fill: var(--stone-50, #FCFBF7); }
+
+#nav.at-top .mk-body  { fill: var(--stone-100, #F6F3EA); }
+#nav.at-top .mk-arrow { fill: var(--moss-900, #16211B); }
+
+#nav.at-top .nav-word          { color: #fff; }
+#nav.at-top .nav-link          { color: rgba(255, 255, 255, 0.82); }
+#nav.at-top .nav-link:hover    { color: #fff; }
+#nav.at-top .nav-burger        { color: #fff; }
+#nav.at-top .nav-burger:hover  { background-color: rgba(255, 255, 255, 0.12); }
+
+#nav.at-top .nav-cta {
+  background-color: var(--stone-100, #F6F3EA);
+  color: var(--moss-900, #16211B);
+}
+#nav.at-top .nav-cta:hover { background-color: #fff; }

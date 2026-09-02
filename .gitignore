@@ -1,0 +1,8 @@
+# Vercel CLI state, including the anonymous deploy token
+.vercel
+
+# Build output. Vercel regenerates this from build.mjs on every deploy.
+_deploy/
+
+node_modules/
+*.log
