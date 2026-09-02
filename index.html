@@ -77,9 +77,9 @@
       </a>
 
       <nav class="hidden items-center gap-8 lg:flex">
+        <a href="#about"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">About</a>
         <a href="#focus"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Investment Criteria</a>
         <a href="#process"   class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">The Process</a>
-        <a href="#about"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">About</a>
         <a href="#factsheet" class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Factsheet</a>
         <a href="#booking"   class="nav-cta btn-dark !px-5 !py-2.5 !text-[13px]">Book a meeting</a>
       </nav>
@@ -93,9 +93,9 @@
   <!-- the slide-down menu on phones -->
   <div id="mobileMenu" class="hidden border-t border-stone-200 bg-white lg:hidden">
     <nav class="mx-auto max-w-8xl space-y-1 px-5 py-5 sm:px-8">
+      <a href="#about"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">About</a>
       <a href="#focus"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Investment Criteria</a>
       <a href="#process"   class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">The Process</a>
-      <a href="#about"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">About</a>
       <a href="#factsheet" class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Factsheet</a>
       <a href="#booking"   class="mobile-link mt-2 block rounded-[4px] bg-moss-900 px-3 py-3.5 text-center text-[14px] font-medium text-white">Book a meeting</a>
     </nav>
@@ -217,11 +217,110 @@
 
 <!--
   =========================================================================
+  ABOUT
+  The headshot is assets/images/chris-kern.jpg. To swap it, drop a new file
+  in that folder and change the src below.
+  =========================================================================
+-->
+<section id="about" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
+  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+
+    <div class="max-w-3xl">
+      <p class="reveal eyebrow">About</p>
+      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
+        Meet Chris Kern
+      </h2>
+    </div>
+
+    <div class="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
+
+      <div class="reveal lg:col-span-4">
+        <div class="bg-white shadow-card">
+          <!-- Photo carousel. To add a photo: drop the file in assets/images/ and add
+               another <img> below with the class "slide". The dots and arrows follow. -->
+          <div id="photoCarousel" class="group relative bg-stone-200"
+               role="region" aria-roledescription="carousel" aria-label="Photos of Chris Kern">
+
+            <div class="relative h-[26rem] overflow-hidden">
+              <img src="assets/images/chris-kern.jpg" alt="Chris Kern"
+                   width="800" height="1126"
+                   class="slide absolute inset-0 h-full w-full object-cover object-top" />
+              <img src="assets/images/chris-machu-picchu.jpg" alt="Chris Kern hiking at Machu Picchu, Peru"
+                   width="800" height="1067" decoding="async"
+                   class="slide absolute inset-0 h-full w-full object-cover object-center" />
+              <img src="assets/images/chris-big-sky.jpg" alt="Chris Kern at the backcountry gate above Big Sky Resort, Montana"
+                   width="800" height="1067" decoding="async"
+                   class="slide absolute inset-0 h-full w-full object-cover object-center" />
+            </div>
+
+            <button type="button" id="carouselPrev" aria-label="Previous photo"
+                    class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-stone-800 opacity-0 shadow-card transition hover:bg-white focus-visible:opacity-100 group-hover:opacity-100">
+              <i data-lucide="chevron-left" class="h-5 w-5"></i>
+            </button>
+            <button type="button" id="carouselNext" aria-label="Next photo"
+                    class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-stone-800 opacity-0 shadow-card transition hover:bg-white focus-visible:opacity-100 group-hover:opacity-100">
+              <i data-lucide="chevron-right" class="h-5 w-5"></i>
+            </button>
+
+            <div id="carouselDots" class="absolute inset-x-0 bottom-3 flex items-center justify-center gap-2"></div>
+          </div>
+
+          <div class="p-7">
+            <h3 data-site="founderName" class="text-[19px] font-semibold tracking-tight text-moss-900">Chris Kern</h3>
+            <p data-site="founderTitle" class="mt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-600">Founder</p>
+
+            <div class="my-6 rule"></div>
+
+            <div class="space-y-3 text-[14px]">
+              <a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@tidewaterpartners.com</span></a>
+              <a data-site-href="tel:" data-site-href-key="phoneLink" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="phone" class="h-4 w-4 shrink-0"></i><span data-site="phone">(813) 597-5980</span></a>
+              <a data-site-href="https://" data-site-href-key="linkedin" data-site-attr-only href="#" target="_blank" rel="noopener" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.83-2.06 3.76-2.06 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.48-2.19 3v5.8H9z"/></svg><span data-site="linkedin">linkedin.com/in/chrishkern</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THE BIO -->
+      <div class="lg:col-span-8">
+        <div class="reveal space-y-6 text-[16.5px] leading-[1.8] text-stone-600">
+          <p>
+            Chris runs a residential water treatment business, mostly softeners and filtration for
+            homes on private wells. The customers are homeowners, and the calls come when
+            something has gone wrong with water they cannot do without. Running it taught him what a
+            small service company depends on: a technician who shows up, a phone someone answers, and
+            enough route density to stay profitable at small ticket sizes. That business is also what
+            led him to septic. The house that needs a softener usually has a drain field out back,
+            permitted through the same county office and worked on by many of the same trades.
+          </p>
+          <p>
+            He spent several years as a private equity associate at a lower middle market firm investing in
+            specialty services, value-added distribution, and niche manufacturing, working on
+            platform buyouts and add-on acquisitions of founder and family-owned companies. He
+            supported origination, ran diligence and financing workstreams through to closing, and
+            worked alongside management teams on budgets, KPI reporting, and integration. He lines up
+            equity and debt before signing a letter of intent, so the price in the letter is the
+            price paid at closing. Previously, he was an associate at TGH Ventures, the venture capital
+            group inside Tampa General Hospital, investing in digital health and healthcare services.
+          </p>
+          <p>
+            Chris lives in Philadelphia. Outside of work, he enjoys attempting, but often failing, to
+            break 80 on the golf course, playing classical piano, and searching for his best next
+            hiking spot. He earned a B.S. in Finance from Florida State University, graduating magna
+            cum laude with honors, and is an MBA candidate at The Wharton School.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  =========================================================================
   INVESTMENT CRITERIA
   Four criteria blocks, then the fit / out-of-scope lists.
   =========================================================================
 -->
-<section id="focus" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
+<section id="focus" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="max-w-3xl">
@@ -307,7 +406,7 @@
   Three columns covering the work in scope.
   =========================================================================
 -->
-<section class="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32">
+<section class="relative overflow-hidden bg-stone-100 py-24 sm:py-28 lg:py-32">
 
   <!-- Backdrop: a drain field in section. Grade at the top, then the trench,
        the perforated lateral, and the water table settling out below. This is
@@ -424,7 +523,7 @@
   Five short commitments about behavior during a sale process.
   =========================================================================
 -->
-<section class="bg-stone-100 py-24 sm:py-28 lg:py-32">
+<section class="bg-white py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
     <div class="grid gap-14 lg:grid-cols-12 lg:gap-20">
 
@@ -479,7 +578,7 @@
   drops the connector line, so keep it last.
   =========================================================================
 -->
-<section id="process" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
+<section id="process" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
@@ -581,104 +680,7 @@
   </div>
 </section>
 
-<!--
-  =========================================================================
-  ABOUT
-  The headshot is assets/images/chris-kern.jpg. To swap it, drop a new file
-  in that folder and change the src below.
-  =========================================================================
--->
-<section id="about" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
-  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
-    <div class="max-w-3xl">
-      <p class="reveal eyebrow">About</p>
-      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
-        Meet Chris Kern
-      </h2>
-    </div>
-
-    <div class="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
-
-      <div class="reveal lg:col-span-4">
-        <div class="bg-white shadow-card">
-          <!-- Photo carousel. To add a photo: drop the file in assets/images/ and add
-               another <img> below with the class "slide". The dots and arrows follow. -->
-          <div id="photoCarousel" class="group relative bg-stone-200"
-               role="region" aria-roledescription="carousel" aria-label="Photos of Chris Kern">
-
-            <div class="relative h-[26rem] overflow-hidden">
-              <img src="assets/images/chris-kern.jpg" alt="Chris Kern"
-                   width="800" height="1126"
-                   class="slide absolute inset-0 h-full w-full object-cover object-top" />
-              <img src="assets/images/chris-machu-picchu.jpg" alt="Chris Kern hiking at Machu Picchu, Peru"
-                   width="800" height="1067" decoding="async"
-                   class="slide absolute inset-0 h-full w-full object-cover object-center" />
-              <img src="assets/images/chris-big-sky.jpg" alt="Chris Kern at the backcountry gate above Big Sky Resort, Montana"
-                   width="800" height="1067" decoding="async"
-                   class="slide absolute inset-0 h-full w-full object-cover object-center" />
-            </div>
-
-            <button type="button" id="carouselPrev" aria-label="Previous photo"
-                    class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-stone-800 opacity-0 shadow-card transition hover:bg-white focus-visible:opacity-100 group-hover:opacity-100">
-              <i data-lucide="chevron-left" class="h-5 w-5"></i>
-            </button>
-            <button type="button" id="carouselNext" aria-label="Next photo"
-                    class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-stone-800 opacity-0 shadow-card transition hover:bg-white focus-visible:opacity-100 group-hover:opacity-100">
-              <i data-lucide="chevron-right" class="h-5 w-5"></i>
-            </button>
-
-            <div id="carouselDots" class="absolute inset-x-0 bottom-3 flex items-center justify-center gap-2"></div>
-          </div>
-
-          <div class="p-7">
-            <h3 data-site="founderName" class="text-[19px] font-semibold tracking-tight text-moss-900">Chris Kern</h3>
-            <p data-site="founderTitle" class="mt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-600">Founder</p>
-
-            <div class="my-6 rule"></div>
-
-            <div class="space-y-3 text-[14px]">
-              <a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@tidewaterpartners.com</span></a>
-              <a data-site-href="tel:" data-site-href-key="phoneLink" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="phone" class="h-4 w-4 shrink-0"></i><span data-site="phone">(813) 597-5980</span></a>
-              <a data-site-href="https://" data-site-href-key="linkedin" data-site-attr-only href="#" target="_blank" rel="noopener" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.83-2.06 3.76-2.06 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.48-2.19 3v5.8H9z"/></svg><span data-site="linkedin">linkedin.com/in/chrishkern</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- THE BIO -->
-      <div class="lg:col-span-8">
-        <div class="reveal space-y-6 text-[16.5px] leading-[1.8] text-stone-600">
-          <p>
-            Chris runs a residential water treatment business, mostly softeners and filtration for
-            homes on private wells. The customers are homeowners, and the calls come when
-            something has gone wrong with water they cannot do without. Running it taught him what a
-            small service company depends on: a technician who shows up, a phone someone answers, and
-            enough route density to stay profitable at small ticket sizes. That business is also what
-            led him to septic. The house that needs a softener usually has a drain field out back,
-            permitted through the same county office and worked on by many of the same trades.
-          </p>
-          <p>
-            He spent several years as a private equity associate at a lower middle market firm investing in
-            specialty services, value-added distribution, and niche manufacturing, working on
-            platform buyouts and add-on acquisitions of founder and family-owned companies. He
-            supported origination, ran diligence and financing workstreams through to closing, and
-            worked alongside management teams on budgets, KPI reporting, and integration. He lines up
-            equity and debt before signing a letter of intent, so the price in the letter is the
-            price paid at closing. Previously, he was an associate at TGH Ventures, the venture capital
-            group inside Tampa General Hospital, investing in digital health and healthcare services.
-          </p>
-          <p>
-            Chris lives in Philadelphia. Outside of work, he enjoys attempting, but often failing, to
-            break 80 on the golf course, playing classical piano, and searching for his best next
-            hiking spot. He earned a B.S. in Finance from Florida State University, graduating magna
-            cum laude with honors, and is an MBA candidate at The Wharton School.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!--
   =========================================================================
