@@ -154,34 +154,35 @@
       </div>
 
       <!-- the criteria summary panel -->
-      <div class="reveal lg:col-span-5 lg:pl-8">
-        <div class="border-t-2 border-moss-900 bg-white p-8 shadow-card sm:p-9">
+      <!-- Each label sits above its value, so values get the full panel width and stay on one line. -->
+      <div class="reveal lg:col-span-5 lg:self-center lg:pl-4">
+        <div class="border-t-2 border-moss-900 bg-white px-7 py-7 shadow-card sm:px-8">
           <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-400">At a Glance</p>
 
-          <dl class="mt-7 divide-y divide-stone-200">
-            <div class="flex items-baseline justify-between gap-6 pb-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Platform EBITDA</dt>
-              <dd data-site="ebitdaRange" class="text-right text-[17px] font-semibold text-moss-900">$500,000 to $3,000,000</dd>
+          <dl class="mt-5 divide-y divide-stone-200">
+            <div class="block pb-3">
+              <dt class="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-stone-400">Platform EBITDA</dt>
+              <dd data-site="ebitdaRange" class="mt-1 text-[17px] font-semibold text-moss-900">$500,000 to $3,000,000</dd>
             </div>
-            <div class="flex items-baseline justify-between gap-6 py-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Partner Companies</dt>
-              <dd class="text-right text-[15px] font-medium text-stone-800">Smaller operators near our routes</dd>
+            <div class="block py-3">
+              <dt class="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-stone-400">Partner Companies</dt>
+              <dd class="mt-1 text-[15px] font-medium text-stone-800">Smaller operators near our routes</dd>
             </div>
-            <div class="flex items-baseline justify-between gap-6 py-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Industry</dt>
-              <dd data-site="industry" class="text-right text-[15px] font-medium text-stone-800">Residential and commercial pest control</dd>
+            <div class="block py-3">
+              <dt class="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-stone-400">Industry</dt>
+              <dd data-site="industry" class="mt-1 text-[15px] font-medium text-stone-800">Residential and commercial pest control</dd>
             </div>
-            <div class="flex items-baseline justify-between gap-6 py-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Geography</dt>
-              <dd data-site="geography" class="text-right text-[15px] font-medium text-stone-800">The Carolinas, Virginia, and Tennessee</dd>
+            <div class="block py-3">
+              <dt class="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-stone-400">Geography</dt>
+              <dd data-site="geography" class="mt-1 text-[15px] font-medium text-stone-800">The Carolinas, Virginia, and Tennessee</dd>
             </div>
-            <div class="flex items-baseline justify-between gap-6 pt-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Transaction</dt>
-              <dd class="text-right text-[15px] font-medium text-stone-800">Majority recap with partnership rollover</dd>
+            <div class="block pt-3">
+              <dt class="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-stone-400">Transaction</dt>
+              <dd class="mt-1 text-[15px] font-medium text-stone-800">Majority recap with partnership rollover</dd>
             </div>
           </dl>
 
-          <a href="#factsheet" class="mt-8 flex items-center justify-between border-t border-stone-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.13em] text-brass-600 transition hover:text-brass-700">
+          <a href="#factsheet" class="mt-6 flex items-center justify-between border-t border-stone-200 pt-4 text-[11px] font-semibold uppercase tracking-[0.13em] text-brass-600 transition hover:text-brass-700">
             Download the Factsheet
             <i data-lucide="arrow-right" class="h-4 w-4"></i>
           </a>
