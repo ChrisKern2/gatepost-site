@@ -45,22 +45,21 @@ window.SITE = {
      delivery to the address you registered, so it is safe to publish. */
   formAccessKey: 'd0e88e01-b080-4a3b-a16b-3b384715d120',
 
-  /* --- the acquisition mandate ------------------------------------------ */
-  ebitdaRange: '$500,000 to $2,000,000',
-  revenueRange: '$2 million to $12 million',
-  industry: 'Septic and wastewater services',
-  geography: 'Mid-Atlantic and Southeast',
+  /* --- the acquisition mandate ------------------------------------------ *
+     Founding (platform) company bands match the pest CRM grading rubric
+     (Pest Control/pest-crm/src/lib/grading.ts). Revenue is EBITDA at an
+     ~18.5% small-scale margin, rounded. */
+  ebitdaRange: '$500,000 to $3,000,000',
+  revenueRange: '$2.5 million to $17 million',
+  partnerEbitdaRange: '$150,000 to $1,000,000',
+  industry: 'Residential and commercial pest control',
+  geography: 'The Carolinas, Virginia, and Tennessee',
 
   /* States listed in the Investment Criteria section. */
   states: [
-    'Virginia',
     'North Carolina',
     'South Carolina',
-    'Georgia',
-    'Maryland',
-    'Delaware',
-    'Tennessee',
-    'Florida',
-    'Alabama'
+    'Virginia',
+    'Tennessee'
   ]
 };

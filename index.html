@@ -17,6 +17,8 @@
 
   To see your changes: run `npm start`, open http://localhost:4321, and save
   the file. The page reloads on its own.
+
+  The septic version of this page is kept under the git tag `septic-final`.
   ===========================================================================
 -->
 <html lang="en" class="scroll-smooth">
@@ -25,10 +27,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Shows in the browser tab and in search results -->
-<title>Gatepost Partners | Buying Septic and Wastewater Companies in the Mid-Atlantic and Southeast</title>
-<meta name="description" content="Gatepost Partners buys one septic services or wastewater company in the Mid-Atlantic and Southeast, with $500,000 to $2,000,000 of EBITDA, from an owner who is ready to retire. Cash at close. The name and the crew stay." />
+<title>Gatepost Partners | Building a Southeast Pest Control Platform, Together</title>
+<meta name="description" content="Gatepost Partners is building a regional residential and commercial pest control platform in the Carolinas, Virginia, and Tennessee. Owners join as partners: cash at close, the option to keep a stake, and the name stays on the truck." />
 <meta property="og:title" content="Gatepost Partners" />
-<meta property="og:description" content="One septic or wastewater company in the Mid-Atlantic and Southeast, bought to keep." />
+<meta property="og:description" content="A Southeast pest control platform, built with the owners who founded its companies." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://gatepostpartners.com/" />
 <meta property="og:image" content="https://gatepostpartners.com/assets/images/hero-gatepost.jpg" />
@@ -77,11 +79,12 @@
       </a>
 
       <nav class="hidden items-center gap-8 lg:flex">
-        <a href="#about"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">About</a>
-        <a href="#focus"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Investment Criteria</a>
-        <a href="#process"   class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">The Process</a>
-        <a href="#factsheet" class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Factsheet</a>
-        <a href="#booking"   class="nav-cta btn-dark !px-5 !py-2.5 !text-[13px]">Book a meeting</a>
+        <a href="#thesis"      class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">The Thesis</a>
+        <a href="#partnership" class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Partnership</a>
+        <a href="#focus"       class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">Criteria</a>
+        <a href="#about"       class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">About</a>
+        <a href="#process"     class="nav-link text-[14px] font-medium text-stone-700 transition-colors hover:text-moss-800">The Process</a>
+        <a href="#booking"     class="nav-cta btn-dark !px-5 !py-2.5 !text-[13px]">Book a meeting</a>
       </nav>
 
       <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="nav-burger inline-flex h-10 w-10 items-center justify-center rounded-sm text-stone-800 transition hover:bg-stone-100 lg:hidden">
@@ -93,11 +96,13 @@
   <!-- the slide-down menu on phones -->
   <div id="mobileMenu" class="hidden border-t border-stone-200 bg-white lg:hidden">
     <nav class="mx-auto max-w-8xl space-y-1 px-5 py-5 sm:px-8">
-      <a href="#about"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">About</a>
-      <a href="#focus"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Investment Criteria</a>
-      <a href="#process"   class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">The Process</a>
-      <a href="#factsheet" class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Factsheet</a>
-      <a href="#booking"   class="mobile-link mt-2 block rounded-[4px] bg-moss-900 px-3 py-3.5 text-center text-[14px] font-medium text-white">Book a meeting</a>
+      <a href="#thesis"      class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">The Thesis</a>
+      <a href="#partnership" class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Partnership</a>
+      <a href="#focus"       class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Criteria</a>
+      <a href="#about"       class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">About</a>
+      <a href="#process"     class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">The Process</a>
+      <a href="#factsheet"   class="mobile-link block rounded-sm px-3 py-3 text-[15px] font-medium text-stone-700 hover:bg-stone-100">Factsheet</a>
+      <a href="#booking"     class="mobile-link mt-2 block rounded-[4px] bg-moss-900 px-3 py-3.5 text-center text-[14px] font-medium text-white">Book a meeting</a>
     </nav>
   </div>
 </header>
@@ -124,55 +129,55 @@
     <div class="grid gap-14 pb-20 pt-20 sm:pb-24 sm:pt-24 lg:grid-cols-12 lg:gap-16 lg:pb-32 lg:pt-32">
 
       <div class="lg:col-span-7">
-        <p class="reveal eyebrow eyebrow-light">Mid-Atlantic and Southeast</p>
+        <p class="reveal eyebrow eyebrow-light">Southeast Pest Control</p>
 
         <!-- MAIN HEADLINE -->
         <h1 class="reveal h-section mt-7 text-[2.5rem] leading-[1.1] !text-white sm:text-[3.2rem] lg:text-[3.6rem]">
-          One septic or wastewater company.<br class="hidden sm:block" />
-          <span class="text-white/60">Bought to keep, and run for decades.</span>
+          One regional pest control platform.<br class="hidden sm:block" />
+          <span class="text-white/60">Built with the owners who started it.</span>
         </h1>
 
         <!-- SUPPORTING PARAGRAPH -->
         <p class="reveal mt-8 max-w-xl text-[17px] leading-[1.75] text-white/80">
-          Gatepost Partners is an investment vehicle run by an entrepreneur who spent years buying
-          family and founder owned businesses at a lower middle market private equity firm. The
-          search is for one business doing <span data-site="ebitdaRange">$500,000 to $2,000,000</span>
-          in EBITDA in the Mid-Atlantic or Southeast, bought from an owner who is ready to retire.
-          After closing, operations transition hands. The name stays on the truck and the crew keeps
-          their jobs.
+          Gatepost Partners is building a residential and commercial pest control company across the
+          Carolinas, Virginia, and Tennessee. It starts with one founding business doing
+          <span data-site="ebitdaRange">$500,000 to $3,000,000</span> in EBITDA, then grows as
+          neighboring operators join. Owners who come aboard take cash at closing, can keep a stake
+          in the combined company, and see their name stay on the truck. Everyone rows in the same
+          direction, and everyone shares in where the boat ends up.
         </p>
 
         <div class="reveal mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
           <a href="#booking" class="btn-onDark">Book a meeting</a>
-          <a href="#focus" class="btn-onDarkGhost">See the criteria</a>
+          <a href="#partnership" class="btn-onDarkGhost">How the partnership works</a>
         </div>
       </div>
 
       <!-- the criteria summary panel -->
       <div class="reveal lg:col-span-5 lg:pl-8">
         <div class="border-t-2 border-moss-900 bg-white p-8 shadow-card sm:p-9">
-          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-400">Acquisition Criteria</p>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-400">At a Glance</p>
 
           <dl class="mt-7 divide-y divide-stone-200">
             <div class="flex items-baseline justify-between gap-6 pb-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">EBITDA</dt>
-              <dd data-site="ebitdaRange" class="text-right text-[17px] font-semibold text-moss-900">$500,000 to $2,000,000</dd>
+              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Platform EBITDA</dt>
+              <dd data-site="ebitdaRange" class="text-right text-[17px] font-semibold text-moss-900">$500,000 to $3,000,000</dd>
             </div>
             <div class="flex items-baseline justify-between gap-6 py-4">
-              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Revenue</dt>
-              <dd data-site="revenueRange" class="text-right text-[15px] font-medium text-stone-800">$2 million to $12 million</dd>
+              <dt class="text-[13px] uppercase tracking-wider text-stone-500">Partner Companies</dt>
+              <dd class="text-right text-[15px] font-medium text-stone-800">Smaller operators near our routes</dd>
             </div>
             <div class="flex items-baseline justify-between gap-6 py-4">
               <dt class="text-[13px] uppercase tracking-wider text-stone-500">Industry</dt>
-              <dd data-site="industry" class="text-right text-[15px] font-medium text-stone-800">Septic and wastewater services</dd>
+              <dd data-site="industry" class="text-right text-[15px] font-medium text-stone-800">Residential and commercial pest control</dd>
             </div>
             <div class="flex items-baseline justify-between gap-6 py-4">
               <dt class="text-[13px] uppercase tracking-wider text-stone-500">Geography</dt>
-              <dd data-site="geography" class="text-right text-[15px] font-medium text-stone-800">Mid-Atlantic and Southeast</dd>
+              <dd data-site="geography" class="text-right text-[15px] font-medium text-stone-800">The Carolinas, Virginia, and Tennessee</dd>
             </div>
             <div class="flex items-baseline justify-between gap-6 pt-4">
               <dt class="text-[13px] uppercase tracking-wider text-stone-500">Transaction</dt>
-              <dd class="text-right text-[15px] font-medium text-stone-800">Majority recapitalization</dd>
+              <dd class="text-right text-[15px] font-medium text-stone-800">Majority recap, optional rollover</dd>
             </div>
           </dl>
 
@@ -200,16 +205,379 @@
         <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">Recapitalization, with cash to the owner at closing</p>
       </div>
       <div class="reveal py-9 sm:pl-8 lg:px-8">
+        <p class="text-[28px] font-semibold tracking-tight text-moss-900">Rollover</p>
+        <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">An optional stake in the combined company, not just the one you sold</p>
+      </div>
+      <div class="reveal py-9 sm:pr-8 lg:px-8">
         <p class="text-[28px] font-semibold tracking-tight text-moss-900">5</p>
         <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">Business days to an answer on a teaser or a CIM</p>
       </div>
-      <div class="reveal py-9 sm:pr-8 lg:px-8">
-        <p class="text-[28px] font-semibold tracking-tight text-moss-900">45 to 90</p>
-        <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">Days from signed letter of intent to closing</p>
-      </div>
       <div class="reveal py-9 sm:pl-8 lg:px-8 lg:last:pr-0">
         <p class="text-[28px] font-semibold tracking-tight text-moss-900">1</p>
-        <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">Company to buy, and the only one to own</p>
+        <p class="mt-2 text-[13.5px] leading-relaxed text-stone-500">Platform, built one neighboring company at a time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  =========================================================================
+  THE THESIS
+  Why pest control, why the Southeast, why a platform. Only figures that
+  trace to a primary filing appear here; sources sit under the cards.
+  =========================================================================
+-->
+<section id="thesis" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
+  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+
+    <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-5">
+        <p class="reveal eyebrow">The Thesis</p>
+        <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
+          A needed service, a fast-growing region, and thousands of good companies
+        </h2>
+        <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
+          Homeowners and businesses pay for pest control in every economy, most of them on a
+          schedule. Two national companies hold roughly half of the North American market. Below
+          them sit thousands of family and founder-owned operators with loyal customers and good
+          technicians, and most of them grow at whatever pace word of mouth allows.
+        </p>
+        <p class="reveal mt-5 text-[16.5px] leading-[1.75] text-stone-600">
+          That gap is the opportunity. A group of neighboring companies, sharing one marketing engine,
+          one back office, and denser routes, can grow faster together than any of them could alone,
+          while keeping the local names and people customers already trust.
+        </p>
+      </div>
+
+      <div class="lg:col-span-7 lg:pl-8">
+        <div class="grid gap-px border border-stone-200 bg-stone-200 sm:grid-cols-2">
+
+          <div class="reveal bg-white p-8">
+            <p class="text-[34px] font-semibold tracking-tight text-moss-900">$14.2bn</p>
+            <h3 class="mt-3 text-[15px] font-semibold text-moss-900">Defensive, growing demand</h3>
+            <p class="mt-2 text-[14.5px] leading-relaxed text-stone-600">
+              North American pest control market in 2025, compounding at 6.4% a year over the last
+              decade. It is a need, not a luxury.
+            </p>
+          </div>
+
+          <div class="reveal bg-white p-8">
+            <p class="text-[34px] font-semibold tracking-tight text-moss-900">~75%</p>
+            <h3 class="mt-3 text-[15px] font-semibold text-moss-900">Recurring revenue</h3>
+            <p class="mt-2 text-[14.5px] leading-relaxed text-stone-600">
+              Share of the industry leader's business that is recurring service. Quarterly customers
+              come back on a schedule, and the same holds for well-run local operators.
+            </p>
+          </div>
+
+          <div class="reveal bg-white p-8">
+            <i data-lucide="route" class="h-8 w-8 text-brass-600" stroke-width="1.4"></i>
+            <h3 class="mt-4 text-[15px] font-semibold text-moss-900">Route density drives margin</h3>
+            <p class="mt-2 text-[14.5px] leading-relaxed text-stone-600">
+              A technician with more stops on the same streets earns far more per day at nearly the
+              same cost. Neighboring companies that combine routes get there fastest.
+            </p>
+          </div>
+
+          <div class="reveal bg-white p-8">
+            <i data-lucide="trending-up" class="h-8 w-8 text-brass-600" stroke-width="1.4"></i>
+            <h3 class="mt-4 text-[15px] font-semibold text-moss-900">A growing Southeast</h3>
+            <p class="mt-2 text-[14.5px] leading-relaxed text-stone-600">
+              New households, warm and humid seasons that keep getting longer, and suburbs full of
+              owner-occupied homes. Raleigh&ndash;Durham, coastal Carolina, Richmond, and Tennessee lead the list.
+            </p>
+          </div>
+        </div>
+
+        <p class="reveal mt-5 text-[12.5px] leading-relaxed text-stone-400">
+          Sources: Rentokil Initial FY2025 results (North American market size and growth); Rollins
+          FY2025 Form 10-K (recurring share). Market share is derived from both companies' reported
+          North American revenue.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  =========================================================================
+  PARTNERSHIP: ROW TOGETHER
+  The heart of the pitch. Three stages of the platform, then what the
+  combined company brings and what stays with each owner.
+  =========================================================================
+-->
+<section id="partnership" class="scroll-mt-20 bg-moss-900 py-24 text-white sm:py-28 lg:py-32">
+  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+
+    <div class="max-w-3xl">
+      <p class="reveal eyebrow eyebrow-light">Partnership</p>
+      <h2 class="reveal h-section mt-5 text-[2rem] !text-white sm:text-[2.6rem]">
+        Row together, go further
+      </h2>
+      <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-white/70">
+        A rowing crew is faster than its strongest rower, because everyone pulls on the same stroke.
+        That is how this company gets built. Owners who join are not bought out and shown the door.
+        They are invited to stay invested, keep leading the people who know them, and share in what
+        the combined business becomes.
+      </p>
+    </div>
+
+    <!-- the three stages -->
+    <ol class="mt-16 grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
+      <li class="reveal bg-moss-900 p-8 sm:p-9">
+        <span class="font-serif text-[15px] text-brass-300">01</span>
+        <h3 class="mt-4 text-[19px] font-semibold tracking-tight text-white">The founding company</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-white/65">
+          One well-run pest control business becomes the base. Chris steps in full-time as its
+          operator, the team and the name stay, and the owner can roll part of the proceeds into
+          the platform.
+        </p>
+      </li>
+      <li class="reveal bg-moss-900 p-8 sm:p-9">
+        <span class="font-serif text-[15px] text-brass-300">02</span>
+        <h3 class="mt-4 text-[19px] font-semibold tracking-tight text-white">Neighbors join</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-white/65">
+          Operators whose routes sit next to ours join as partners. Their technicians pick up stops
+          on the same streets, and their customers keep seeing the same faces.
+        </p>
+      </li>
+      <li class="reveal bg-moss-900 p-8 sm:p-9">
+        <span class="font-serif text-[15px] text-brass-300">03</span>
+        <h3 class="mt-4 text-[19px] font-semibold tracking-tight text-white">Grow together</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-white/65">
+          Shared marketing, shared systems, and shared buying power compound across every branch.
+          Owners who kept a stake own a piece of a larger, more valuable regional company.
+        </p>
+      </li>
+    </ol>
+
+    <!-- what the platform brings vs what stays yours -->
+    <div class="mt-16 grid gap-10 border-t border-white/15 pt-14 lg:grid-cols-2 lg:gap-16">
+
+      <div class="reveal">
+        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-brass-300">What the Platform Brings</h3>
+        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-white/75">
+          <li class="flex gap-3"><i data-lucide="megaphone" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>A marketing engine that finds new customers in the neighborhoods around your existing routes</span></li>
+          <li class="flex gap-3"><i data-lucide="phone-call" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>Every lead answered within minutes, and autopay and scheduling that keep customers on the books</span></li>
+          <li class="flex gap-3"><i data-lucide="graduation-cap" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>Better pay, training, and a career ladder, so good technicians stay and good recruits come</span></li>
+          <li class="flex gap-3"><i data-lucide="clipboard-list" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>Billing, payroll, insurance, licensing, and compliance handled centrally, off your desk</span></li>
+          <li class="flex gap-3"><i data-lucide="package" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>Purchasing scale on chemicals, vehicles, and equipment</span></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-brass-300">What Stays Yours</h3>
+        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-white/75">
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>The name on the truck and the number customers already call</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>Your crew, their routes, and the relationships they have built</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>A leadership role for as long as you want one, and a clear exit whenever you do not</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-300"></i><span>If you choose, equity in the whole platform, so the growth after closing is partly yours</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  =========================================================================
+  INVESTMENT CRITERIA
+  Four criteria blocks, then the fit / out-of-scope lists.
+  =========================================================================
+-->
+<section id="focus" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
+  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+
+    <div class="max-w-3xl">
+      <p class="reveal eyebrow">Investment Criteria</p>
+      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
+        A founding company, and the partners who join it
+      </h2>
+      <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
+        Building one company for the long run changes what matters in a sale. Cash at closing, the
+        name and the crew stay, a real say in what comes next, and a straight answer quickly when the
+        fit is wrong. Here is what fits.
+      </p>
+    </div>
+
+    <div class="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="reveal border-t-2 border-moss-900 pt-6">
+        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Size</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Founding company: EBITDA of <span data-site="ebitdaRange">$500,000 to $3,000,000</span>,
+          including owner add-backs, on revenue of <span data-site="revenueRange">$2.5 million to $17 million</span>.
+          Partner companies: <span data-site="partnerEbitdaRange">$150,000 to $1,000,000</span> of EBITDA.
+          Profitable for at least the last 3 years.
+        </p>
+      </div>
+
+      <div class="reveal border-t-2 border-moss-900 pt-6">
+        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Pest Control</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Residential-led service with recurring quarterly or monthly plans, ideally mixed with local
+          commercial accounts. Termite, mosquito, and lawn work fit alongside a recurring base.
+        </p>
+      </div>
+
+      <div class="reveal border-t-2 border-moss-900 pt-6">
+        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Southeast</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          <span id="stateSentence">North Carolina, South Carolina, Virginia, and Tennessee.</span>
+          Growing suburbs with owner-occupied homes fit best, led by Raleigh&ndash;Durham, Wilmington to
+          Myrtle Beach, and Richmond.
+        </p>
+      </div>
+
+      <div class="reveal border-t-2 border-moss-900 pt-6">
+        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Partnership Structure</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Gatepost Partners buys a majority interest, with the option for owners to roll equity into
+          the combined company. A licensed operator stays on through the transition, and staying
+          involved yourself is welcomed but never required.
+        </p>
+      </div>
+    </div>
+
+    <!-- fit and scope: factual, so brokers can qualify the mandate in one read -->
+    <div class="mt-20 grid gap-10 border-t border-stone-200 pt-14 lg:grid-cols-2 lg:gap-16">
+
+      <div class="reveal">
+        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-moss-900">A Good Fit</h3>
+        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-stone-600">
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>An owner planning succession, whether that means retiring now or staying on as a partner</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>10 or more years in business, with a name people in the community recognize</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>Most revenue from recurring service agreements, with steady customer retention</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>A licensed operator or lead technician who plans to stay, ideally with a stake</span></li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>Tax returns, a profit and loss statement, and a customer list. That is enough to start.</span></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-moss-900">Out of Scope</h3>
+        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-stone-500">
+          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Start-ups, pre-revenue companies, and turnarounds</span></li>
+          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Founding companies below $500,000 or above $3,000,000 of EBITDA</span></li>
+          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Minority positions, since the purchase is a majority interest</span></li>
+          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Books built mainly on one-time jobs, new-construction pretreats, or national accounts</span></li>
+          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Locations outside the states listed above</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  =========================================================================
+  SERVICE LINES
+  Three columns covering the work in scope.
+  =========================================================================
+-->
+<section class="relative overflow-hidden bg-stone-100 py-24 sm:py-28 lg:py-32">
+
+  <!-- Backdrop: a service route through a neighborhood street grid. Stops
+       sit close together along one line. This is the thesis in one drawing:
+       density on the same streets is what makes the work pay. -->
+  <svg class="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] w-full text-moss-900"
+       viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="strataFade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+        <stop offset="60%"  stop-color="white" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="white" stop-opacity="1"/>
+      </linearGradient>
+      <mask id="strataMask"><rect width="1440" height="300" fill="url(#strataFade)"/></mask>
+    </defs>
+
+    <g mask="url(#strataMask)" fill="none" stroke="currentColor" opacity="0.11">
+      <!-- the street grid -->
+      <g stroke-width="2">
+        <path d="M0 90h1440M0 170h1440M0 250h1440"/>
+        <path d="M120 0v300M330 0v300M540 0v300M750 0v300M960 0v300M1170 0v300M1380 0v300"/>
+      </g>
+      <!-- the route, weaving through the blocks -->
+      <path d="M120 250V170h210V90h210v80h210v80h210V90h210v80h210" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+      <!-- stops along the route -->
+      <g fill="currentColor" stroke="none" opacity="0.8">
+        <circle cx="120" cy="210" r="7"/><circle cx="225" cy="170" r="7"/><circle cx="330" cy="130" r="7"/>
+        <circle cx="435" cy="90" r="7"/><circle cx="540" cy="130" r="7"/><circle cx="645" cy="170" r="7"/>
+        <circle cx="750" cy="210" r="7"/><circle cx="855" cy="250" r="7"/><circle cx="960" cy="170" r="7"/>
+        <circle cx="1065" cy="90" r="7"/><circle cx="1170" cy="130" r="7"/><circle cx="1275" cy="170" r="7"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="relative mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+
+    <div class="max-w-3xl">
+      <p class="reveal eyebrow">Target Services</p>
+      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
+        The three service lines in focus
+      </h2>
+      <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
+        Residential recurring service is the core. Most good operators run across two or three of
+        these lines, and each one makes the others more valuable on the same route.
+      </p>
+    </div>
+
+    <!-- Three categories, each with its own list of representative services.
+         To add a service, add an <li> to the right column.                  -->
+    <div class="mt-16 grid gap-px border border-stone-200 bg-stone-200 lg:grid-cols-3">
+
+      <div class="reveal bg-white p-8 sm:p-9">
+        <div class="flex h-14 items-center">
+          <i data-lucide="home" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
+        </div>
+        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Residential Pest</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Recurring plans for homeowners, serviced on a schedule by the same technician.
+        </p>
+        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
+        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Quarterly and bi-monthly general pest plans</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Mosquito and tick programs</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Rodent control and exclusion</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Ant, roach, and spider treatments</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Bed bug and stinging insect service</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Wildlife removal and exclusion</li>
+        </ul>
+      </div>
+
+      <div class="reveal bg-white p-8 sm:p-9">
+        <div class="flex h-14 items-center">
+          <i data-lucide="building-2" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
+        </div>
+        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Commercial Pest</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Contracted service for local and regional businesses that cannot afford a pest problem.
+        </p>
+        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
+        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Restaurants and food service</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Apartments and property managers</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Medical offices, schools, and churches</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Warehouses and light industrial</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Retail and office buildings</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Health-inspection documentation</li>
+        </ul>
+      </div>
+
+      <div class="reveal bg-white p-8 sm:p-9">
+        <div class="flex h-14 items-center">
+          <i data-lucide="shield-check" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
+        </div>
+        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Termite and Specialty</h3>
+        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
+          Higher-ticket protection work that builds on a recurring customer base.
+        </p>
+        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
+        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Termite baiting and liquid treatments</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Annual termite renewals</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Real estate wood-destroying insect reports</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Crawlspace moisture control</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Attic insulation</li>
+          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Lawn and ornamental care</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -222,7 +590,7 @@
   in that folder and change the src below.
   =========================================================================
 -->
-<section id="about" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
+<section id="about" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="max-w-3xl">
@@ -272,7 +640,7 @@
             <div class="my-6 rule"></div>
 
             <div class="space-y-3 text-[14px]">
-              <a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@tidewaterpartners.com</span></a>
+              <a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@gatepostpartners.com</span></a>
               <a data-site-href="tel:" data-site-href-key="phoneLink" data-site-attr-only href="#" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><i data-lucide="phone" class="h-4 w-4 shrink-0"></i><span data-site="phone">(813) 597-5980</span></a>
               <a data-site-href="https://" data-site-href-key="linkedin" data-site-attr-only href="#" target="_blank" rel="noopener" class="flex items-center gap-2.5 text-stone-600 transition hover:text-brass-700"><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.83-2.06 3.76-2.06 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.48-2.19 3v5.8H9z"/></svg><span data-site="linkedin">linkedin.com/in/chrishkern</span></a>
             </div>
@@ -288,230 +656,30 @@
             homes on private wells. The customers are homeowners, and the calls come when
             something has gone wrong with water they cannot do without. Running it taught him what a
             small service company depends on: a technician who shows up, a phone someone answers, and
-            enough route density to stay profitable at small ticket sizes. That business is also what
-            led him to septic. The house that needs a softener usually has a drain field out back,
-            permitted through the same county office and worked on by many of the same trades.
+            enough route density to stay profitable at small ticket sizes. Residential pest control
+            runs on exactly those things, with the added strength of customers who stay on a
+            recurring plan year after year.
           </p>
           <p>
             He spent several years as a private equity associate at a lower middle market firm investing in
             specialty services, value-added distribution, and niche manufacturing, working on
             platform buyouts and add-on acquisitions of founder and family-owned companies. He
             supported origination, ran diligence and financing workstreams through to closing, and
-            worked alongside management teams on budgets, KPI reporting, and integration. He lines up
-            equity before signing a letter of intent, so the price in the letter is the price
-            he stands behind at closing. Previously, he was an associate at TGH Ventures, the venture capital
-            group inside Tampa General Hospital, investing in digital health and healthcare services.
+            worked alongside management teams on budgets, KPI reporting, and integration. That work
+            is where he saw how much faster a group of good companies grows when the owners stay
+            invested and pull in the same direction. He lines up equity before signing a letter of
+            intent, so the price in the letter is the price he stands behind at closing. Previously,
+            he was an associate at TGH Ventures, the venture capital group inside Tampa General
+            Hospital, investing in digital health and healthcare services.
           </p>
           <p>
-            Chris lives in Philadelphia. Outside of work, he enjoys attempting, but often failing, to
-            break 80 on the golf course, playing classical piano, and searching for his best next
-            hiking spot. He earned a B.S. in Finance from Florida State University, graduating magna
-            cum laude with honors, and is an MBA candidate at The Wharton School.
+            Chris lives in Philadelphia and plans to move to the market to run the founding company
+            day to day. Outside of work, he enjoys attempting, but often failing, to break 80 on the
+            golf course, playing classical piano, and searching for his best next hiking spot. He
+            earned a B.S. in Finance from Florida State University, graduating magna cum laude with
+            honors, and is an MBA candidate at The Wharton School.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--
-  =========================================================================
-  INVESTMENT CRITERIA
-  Four criteria blocks, then the fit / out-of-scope lists.
-  =========================================================================
--->
-<section id="focus" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
-  <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
-
-    <div class="max-w-3xl">
-      <p class="reveal eyebrow">Investment Criteria</p>
-      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
-        One company, bought to keep
-      </h2>
-      <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
-        Owning one business for decades changes what matters in a sale process. Cash at closing,
-        the name and the crew stay, and a straight answer comes quickly when the fit is wrong. Here
-        is what fits.
-      </p>
-    </div>
-
-    <div class="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-
-      <div class="reveal border-t-2 border-moss-900 pt-6">
-        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Lower Middle Market</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          EBITDA of $500,000 to $2,000,000, including owner add-backs. Revenue of $2 million to
-          $12 million. Profitable for at least the last 3 years.
-        </p>
-      </div>
-
-      <div class="reveal border-t-2 border-moss-900 pt-6">
-        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Septic and Wastewater</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          Residential and commercial service work, where pumping, inspection, and maintenance
-          contracts bring customers back on a schedule.
-        </p>
-      </div>
-
-      <div class="reveal border-t-2 border-moss-900 pt-6">
-        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Mid-Atlantic and Southeast</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          <span id="stateSentence">Virginia, North Carolina, South Carolina, Georgia, Maryland, Delaware, Tennessee, Florida, and Alabama.</span>
-          Counties with high septic density and steady population growth fit best.
-        </p>
-      </div>
-
-      <div class="reveal border-t-2 border-moss-900 pt-6">
-        <h3 class="text-[17px] font-semibold leading-snug text-moss-900">Majority Recapitalization</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          Gatepost Partners buys a majority interest, and its founder steps in full-time as
-          president. Your crew stays, and what they know about the routes, the customers, and the
-          county health office is most of what makes the company worth buying. Staying on yourself is
-          available and never required.
-        </p>
-      </div>
-    </div>
-
-    <!-- fit and scope: factual, so brokers can qualify the mandate in one read -->
-    <div class="mt-20 grid gap-10 border-t border-stone-200 pt-14 lg:grid-cols-2 lg:gap-16">
-
-      <div class="reveal">
-        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-moss-900">A Good Fit</h3>
-        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-stone-600">
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>An owner in their late 50s or older who wants to stop working</span></li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>10 or more years in business, with a name people in the county recognize</span></li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>5 to 40 employees, including a lead technician or foreman who plans to stay</span></li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>Owned trucks and tanks in working condition, with a licensed disposal arrangement</span></li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i><span>Tax returns and a profit and loss statement. That is enough to start.</span></li>
-        </ul>
-      </div>
-
-      <div class="reveal">
-        <h3 class="text-[13px] font-semibold uppercase tracking-[0.16em] text-moss-900">Out of Scope</h3>
-        <ul class="mt-6 space-y-4 text-[15px] leading-relaxed text-stone-500">
-          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Start-ups, pre-revenue companies, and turnarounds</span></li>
-          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>EBITDA below $500,000 or above $2,000,000</span></li>
-          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Minority positions, since the purchase is a majority interest</span></li>
-          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Companies whose revenue depends on new construction, with little repeat service</span></li>
-          <li class="flex gap-3"><i data-lucide="minus" class="mt-1 h-4 w-4 shrink-0 text-stone-300"></i><span>Locations outside the states listed above</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--
-  =========================================================================
-  SERVICE LINES
-  Three columns covering the work in scope.
-  =========================================================================
--->
-<section class="relative overflow-hidden bg-stone-100 py-24 sm:py-28 lg:py-32">
-
-  <!-- Backdrop: a drain field in section. Grade at the top, then the trench,
-       the perforated lateral, and the water table settling out below. This is
-       the thesis in one drawing: what goes in the ground has to be handled. -->
-  <svg class="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] w-full text-moss-900"
-       viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
-    <defs>
-      <linearGradient id="strataFade" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%"   stop-color="white" stop-opacity="0"/>
-        <stop offset="60%"  stop-color="white" stop-opacity="0.6"/>
-        <stop offset="100%" stop-color="white" stop-opacity="1"/>
-      </linearGradient>
-      <mask id="strataMask"><rect width="1440" height="300" fill="url(#strataFade)"/></mask>
-    </defs>
-
-    <g mask="url(#strataMask)" fill="none" stroke="currentColor" opacity="0.11">
-      <!-- grade line -->
-      <path d="M0 96h1440" stroke-width="2.5"/>
-      <!-- trench walls and the gravel bed -->
-      <path d="M180 96v56h1080V96" stroke-width="2"/>
-      <!-- the lateral, running the length of the field -->
-      <path d="M210 128h1020" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
-      <!-- perforations dropping into the soil -->
-      <g stroke-width="2" stroke-linecap="round" opacity="0.7">
-        <path d="M250 138v22M330 138v22M410 138v22M490 138v22M570 138v22M650 138v22M730 138v22M810 138v22M890 138v22M970 138v22M1050 138v22M1130 138v22"/>
-      </g>
-      <!-- soil strata settling toward the water table -->
-      <path d="M0 208c120-14 240-14 360 0s240 14 360 0 240-14 360 0 240 14 360 0" stroke-width="2"/>
-      <path d="M0 252c120-10 240-10 360 0s240 10 360 0 240-10 360 0 240 10 360 0" stroke-width="2" opacity="0.7"/>
-      <path d="M0 288h1440" stroke-width="2" opacity="0.45"/>
-    </g>
-  </svg>
-
-  <div class="relative mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
-
-    <div class="max-w-3xl">
-      <p class="reveal eyebrow">Target Industries</p>
-      <h2 class="reveal h-section mt-5 text-[2rem] sm:text-[2.6rem]">
-        The three segments in focus
-      </h2>
-      <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
-        A company concentrated in any one of these segments is worth a conversation, and most
-        operators run across two.
-      </p>
-    </div>
-
-    <!-- Three categories, each with its own list of representative services.
-         To add a service, add an <li> to the right column.                  -->
-    <div class="mt-16 grid gap-px border border-stone-200 bg-stone-200 lg:grid-cols-3">
-
-      <div class="reveal bg-white p-8 sm:p-9">
-        <div class="flex h-14 items-center">
-          <i data-lucide="truck" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
-        </div>
-        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Septic Services</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          Onsite systems for homes and businesses that are not connected to municipal sewer.
-        </p>
-        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
-        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Residential and commercial tank pumping</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>System installation and replacement</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Drain field repair and restoration</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Tank, baffle, and filter service</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Real estate transfer inspections</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>County permitting and soil evaluation</li>
-        </ul>
-      </div>
-
-      <div class="reveal bg-white p-8 sm:p-9">
-        <div class="flex h-14 items-center">
-          <i data-lucide="droplets" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
-        </div>
-        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Liquid Waste Services</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          Scheduled collection and licensed disposal of non-hazardous liquid waste.
-        </p>
-        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
-        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Restaurant and commercial grease trap service</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Grease interceptor pumping and line jetting</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Non-hazardous liquid waste collection</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Car wash and industrial pit cleaning</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Portable sanitation rental and servicing</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Transport to licensed disposal facilities</li>
-        </ul>
-      </div>
-
-      <div class="reveal bg-white p-8 sm:p-9">
-        <div class="flex h-14 items-center">
-          <i data-lucide="factory" class="h-9 w-9 text-brass-600" stroke-width="1.4"></i>
-        </div>
-        <h3 class="mt-5 text-[19px] font-semibold tracking-tight text-moss-900">Wastewater Infrastructure</h3>
-        <p class="mt-3 text-[14.5px] leading-relaxed text-stone-600">
-          Treatment and collection assets, often under municipal or commercial contract.
-        </p>
-        <p class="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">Representative Services</p>
-        <ul class="mt-4 space-y-2.5 text-[14px] text-stone-600">
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Aerobic treatment unit service</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Decentralized and package treatment plants</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Lift station maintenance and repair</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Sewer line cleaning and hydro-jetting</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Effluent sampling and compliance reporting</li>
-          <li class="flex gap-3"><span class="mt-[7px] h-1 w-1 shrink-0 bg-stone-300"></span>Municipal and utility service contracts</li>
-        </ul>
       </div>
     </div>
   </div>
@@ -523,7 +691,7 @@
   Five short commitments about behavior during a sale process.
   =========================================================================
 -->
-<section class="bg-white py-24 sm:py-28 lg:py-32">
+<section class="bg-stone-100 py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
     <div class="grid gap-14 lg:grid-cols-12 lg:gap-20">
 
@@ -533,8 +701,8 @@
           What you can hold Gatepost to
         </h2>
         <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
-          Selling is a slow, private decision, and you will make it once. These are the rules Gatepost Partners holds
-          itself to while you think it over.
+          Choosing a partner for the company you built is a slow, private decision, and you will make
+          it once. These are the rules Gatepost Partners holds itself to while you think it over.
         </p>
       </div>
 
@@ -558,12 +726,12 @@
 
           <div class="grid gap-2 py-7 sm:grid-cols-3 sm:gap-8">
             <dt class="text-[15px] font-semibold text-moss-900">Continuity</dt>
-            <dd class="text-[15px] leading-relaxed text-stone-600 sm:col-span-2">The name stays, the phone number stays, and the crew keeps their jobs. Customers who call on a Sunday get treated the way they always have.</dd>
+            <dd class="text-[15px] leading-relaxed text-stone-600 sm:col-span-2">The name stays, the phone number stays, and the crew keeps their jobs and their routes. Customers keep seeing the technician they already know.</dd>
           </div>
 
           <div class="grid gap-2 py-7 sm:grid-cols-3 sm:gap-8">
-            <dt class="text-[15px] font-semibold text-moss-900">Preparation</dt>
-            <dd class="text-[15px] leading-relaxed text-stone-600 sm:col-span-2">Diligence is organized on this side and worked around your schedule. You should not have to hire anyone to sell your company.</dd>
+            <dt class="text-[15px] font-semibold text-moss-900">Aligned Interests</dt>
+            <dd class="text-[15px] leading-relaxed text-stone-600 sm:col-span-2">Owners who roll equity invest alongside Gatepost in the same company. When the platform grows, everyone who helped build it shares in it.</dd>
           </div>
         </dl>
       </div>
@@ -578,7 +746,7 @@
   drops the connector line, so keep it last.
   =========================================================================
 -->
-<section id="process" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
+<section id="process" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
@@ -589,9 +757,9 @@
           Start with a conversation about what you want next
         </h2>
         <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-700">
-          From the first call to money in your account usually takes 3 to 4 months. You will still be
-          running routes the whole time, so the work stays on this side of the table wherever
-          possible.
+          From the first call to closing usually takes 3 to 4 months. You will still be running
+          routes the whole time, so the work stays on this side of the table wherever possible. The
+          partnership starts on the day after closing.
         </p>
       </div>
 
@@ -607,7 +775,7 @@
             <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">30 minutes</span>
           </div>
           <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
-            A call about the company and what you want to happen after you step back. A confidentiality agreement is signed first.
+            A call about the company, what you want to happen next, and whether you would rather step back or stay invested. A confidentiality agreement is signed first.
           </p>
         </div>
       </li>
@@ -623,7 +791,7 @@
             <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">2 to 3 hours</span>
           </div>
           <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
-            A visit to the yard to see the trucks, walk the routes, and meet the people who run the work.
+            A visit to the office to meet the people who run the work, ride along on a route, and talk through how your company would fit in the platform.
           </p>
         </div>
       </li>
@@ -639,7 +807,7 @@
             <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">2 to 3 weeks</span>
           </div>
           <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
-            Price, structure, and timing in plain English. Equity is committed before signing, so the terms hold.
+            Price, structure, rollover, and your role after closing, in plain English. Equity is committed before signing, so the terms hold.
           </p>
         </div>
       </li>
@@ -655,7 +823,7 @@
             <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">8 to 12 weeks</span>
           </div>
           <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
-            A review of financials, routes, equipment, permits, and disposal, run around your schedule. Your team hears about it when you decide to tell them.
+            A review of financials, customer retention, routes, licensing, and termite history, run around your schedule. Your team hears about it when you decide to tell them.
           </p>
         </div>
       </li>
@@ -663,15 +831,30 @@
       <li class="reveal flex gap-6 sm:gap-8">
         <div class="flex flex-col items-center">
           <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-moss-800 font-serif text-[15px] text-stone-50">5</span>
-          
+          <span class="mt-3 w-px flex-1 bg-stone-300"></span>
         </div>
-        <div class="pb-1">
+        <div class="pb-14">
           <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
             <h3 class="text-[20px] font-semibold text-moss-900">Close</h3>
             <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">2 to 3 weeks</span>
           </div>
           <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
-            Documents are signed and funds move. You are paid for your majority stake, and daily operations change hands.
+            Documents are signed and funds move. You are paid for your majority stake, and any rollover becomes your ownership in the combined company.
+          </p>
+        </div>
+      </li>
+
+      <li class="reveal flex gap-6 sm:gap-8">
+        <div class="flex flex-col items-center">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brass-600 font-serif text-[15px] text-white">6</span>
+        </div>
+        <div class="pb-1">
+          <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+            <h3 class="text-[20px] font-semibold text-moss-900">Row together</h3>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-brass-700">The years ahead</span>
+          </div>
+          <p class="mt-3 max-w-2xl text-[15.5px] leading-[1.7] text-stone-600">
+            The platform's marketing, systems, and people get to work on your routes, neighboring companies join, and the business you started keeps growing as part of something larger.
           </p>
         </div>
       </li>
@@ -689,7 +872,7 @@
   or through the contact form, not through the website.
   =========================================================================
 -->
-<section id="factsheet" class="scroll-mt-20 bg-white py-24 sm:py-28 lg:py-32">
+<section id="factsheet" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="max-w-3xl">
@@ -698,12 +881,12 @@
         Download the factsheet
       </h2>
       <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-stone-600">
-        One page covering the criteria, the terms, how the process runs, and who is behind the firm.
+        One page covering the thesis, the partnership, the criteria, and who is behind the firm.
         Print it, forward it, or hand it to your accountant.
       </p>
     </div>
 
-    <div class="reveal mt-14 border border-stone-200">
+    <div class="reveal mt-14 border border-stone-200 bg-white">
 
       <div class="flex flex-col items-start gap-6 border-b border-stone-200 bg-moss-900 px-8 py-9 sm:flex-row sm:items-center sm:px-10">
         <span class="inline-flex h-14 w-14 shrink-0 items-center justify-center border border-white/20">
@@ -711,16 +894,16 @@
         </span>
         <div>
           <h3 class="text-[20px] font-semibold tracking-tight text-white"><span data-site="firmName">Gatepost Partners</span> Factsheet</h3>
-          <p class="mt-1.5 text-[14px] text-white/60">One page. Criteria, process, and background. Updated 2026.</p>
+          <p class="mt-1.5 text-[14px] text-white/60">One page. Thesis, partnership, criteria, and background. Updated 2026.</p>
         </div>
       </div>
 
       <div class="p-8 sm:p-10">
         <ul class="grid gap-4 text-[15px] text-stone-600 sm:max-w-3xl sm:grid-cols-2">
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>Investment approach and size parameters</li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>The three target industries, with representative services</li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>Founder background</li>
-          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>Direct contact details</li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>Investment thesis and size parameters</li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>How the partnership and rollover work</li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>The three service lines in focus</li>
+          <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-brass-600"></i>Founder background and direct contact</li>
         </ul>
 
         <div class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -763,14 +946,15 @@
         </h2>
         <p class="reveal mt-7 text-[16.5px] leading-[1.75] text-white/70">
           Pick a time that suits you and it lands directly on the calendar. The first call is a
-          conversation about the business and what you want to happen next. You need no documents for
-          it, and a confidentiality agreement is signed before you send anything.
+          conversation about the business, what you want to happen next, and whether rowing together
+          makes sense. You need no documents for it, and a confidentiality agreement is signed before
+          you send anything.
         </p>
 
         <ul class="reveal mt-9 space-y-4 border-t border-white/15 pt-8 text-[15px] text-white/75">
           <li class="flex gap-3"><i data-lucide="clock" class="mt-0.5 h-[18px] w-[18px] shrink-0 text-brass-300"></i>30 minutes, by phone or video, whichever you prefer</li>
           <li class="flex gap-3"><i data-lucide="lock" class="mt-0.5 h-[18px] w-[18px] shrink-0 text-brass-300"></i>Confidential, and it commits you to nothing</li>
-          <li class="flex gap-3"><i data-lucide="user" class="mt-0.5 h-[18px] w-[18px] shrink-0 text-brass-300"></i>The person who would buy the company takes the call</li>
+          <li class="flex gap-3"><i data-lucide="user" class="mt-0.5 h-[18px] w-[18px] shrink-0 text-brass-300"></i>The person who would be your partner takes the call</li>
         </ul>
       </div>
 
@@ -786,8 +970,7 @@
 <!--
   =========================================================================
   CONTACT
-  The form shows a thank-you message. To receive real emails, open
-  assets/site.js and set FORM_ENDPOINT near the top of the file.
+  The form posts to Web3Forms using formAccessKey in assets/site-data.js.
   =========================================================================
 -->
 <section id="contact" class="scroll-mt-20 bg-stone-100 py-24 sm:py-28 lg:py-32">
@@ -808,7 +991,7 @@
         <div class="reveal mt-10 divide-y divide-stone-200 border-t border-stone-200">
           <div class="flex items-baseline gap-6 py-5">
             <p class="w-24 shrink-0 text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-400">Email</p>
-            <a data-site="email" data-site-href="mailto:" href="#" class="text-[15.5px] font-medium text-moss-900 transition hover:text-brass-700">chris@tidewaterpartners.com</a>
+            <a data-site="email" data-site-href="mailto:" href="#" class="text-[15.5px] font-medium text-moss-900 transition hover:text-brass-700">chris@gatepostpartners.com</a>
           </div>
           <div class="flex items-baseline gap-6 py-5">
             <p class="w-24 shrink-0 text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-400">Phone</p>
@@ -835,11 +1018,11 @@
             </div>
             <div>
               <label class="label" for="company">Company</label>
-              <input id="company" name="company" type="text" class="field" placeholder="Whitaker Septic Service" />
+              <input id="company" name="company" type="text" class="field" placeholder="Whitaker Pest Solutions" />
             </div>
             <div>
               <label class="label" for="email">Email *</label>
-              <input id="email" name="email" type="email" required class="field" placeholder="jane@whitakerseptic.com" />
+              <input id="email" name="email" type="email" required class="field" placeholder="jane@whitakerpest.com" />
               <p class="err mt-1.5 hidden text-[12.5px] font-medium text-red-600">Please enter a valid email address.</p>
             </div>
             <div>
@@ -849,7 +1032,7 @@
             <div>
               <label class="label" for="role">I am a</label>
               <select id="role" name="role" class="field">
-                <option value="Business owner">Business owner thinking about selling</option>
+                <option value="Business owner">Business owner thinking about selling or partnering</option>
                 <option value="Broker / intermediary">Broker or M&amp;A intermediary</option>
                 <option value="Advisor">Accountant, attorney, or advisor</option>
                 <option value="Investor">Investor or lender</option>
@@ -864,16 +1047,17 @@
               <label class="label" for="revenue">Approximate annual revenue</label>
               <select id="revenue" name="revenue" class="field">
                 <option value="">Prefer not to say</option>
-                <option>Under $2 million</option>
-                <option>$2 million to $4 million</option>
-                <option>$4 million to $7 million</option>
-                <option>$7 million to $12 million</option>
-                <option>Over $12 million</option>
+                <option>Under $1 million</option>
+                <option>$1 million to $2.5 million</option>
+                <option>$2.5 million to $5 million</option>
+                <option>$5 million to $10 million</option>
+                <option>$10 million to $17 million</option>
+                <option>Over $17 million</option>
               </select>
             </div>
             <div class="sm:col-span-2">
               <label class="label" for="message">What would you like to talk about? *</label>
-              <textarea id="message" name="message" rows="5" required class="field resize-none" placeholder="How long you have run the company, what services you do, and what you would like to happen next."></textarea>
+              <textarea id="message" name="message" rows="5" required class="field resize-none" placeholder="How long you have run the company, what services you offer, and what you would like to happen next."></textarea>
               <p class="err mt-1.5 hidden text-[12.5px] font-medium text-red-600">Please add a short note about how to help.</p>
             </div>
           </div>
@@ -917,17 +1101,18 @@
           <span data-site="firmName" class="font-serif text-[19px] font-semibold leading-none tracking-tight text-white">Gatepost Partners</span>
         </div>
         <p class="mt-6 max-w-sm text-[14.5px] leading-relaxed text-white/55">
-          An investment vehicle buying one septic services or wastewater company in the Mid-Atlantic and
-          Southeast, and keeping it.
+          Building a regional pest control platform in the Carolinas, Virginia, and Tennessee,
+          together with the owners who founded its companies.
         </p>
       </div>
 
       <div class="md:col-span-3">
         <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/40">Explore</p>
         <ul class="mt-6 space-y-3 text-[14.5px]">
+          <li><a href="#thesis" class="text-white/75 transition hover:text-brass-300">The Thesis</a></li>
+          <li><a href="#partnership" class="text-white/75 transition hover:text-brass-300">Partnership</a></li>
           <li><a href="#focus" class="text-white/75 transition hover:text-brass-300">Investment Criteria</a></li>
           <li><a href="#process" class="text-white/75 transition hover:text-brass-300">The Process</a></li>
-          <li><a href="#about" class="text-white/75 transition hover:text-brass-300">About</a></li>
           <li><a href="#factsheet" class="text-white/75 transition hover:text-brass-300">Factsheet</a></li>
         </ul>
       </div>
@@ -935,7 +1120,7 @@
       <div class="md:col-span-4">
         <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/40">Get in Touch</p>
         <ul class="mt-6 space-y-3 text-[14.5px]">
-          <li><a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-white/75 transition hover:text-brass-300"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@tidewaterpartners.com</span></a></li>
+          <li><a data-site-href="mailto:" data-site-href-key="email" data-site-attr-only href="#" class="flex items-center gap-2.5 text-white/75 transition hover:text-brass-300"><i data-lucide="mail" class="h-4 w-4 shrink-0"></i><span data-site="email">chris@gatepostpartners.com</span></a></li>
           <li><a data-site-href="tel:" data-site-href-key="phoneLink" data-site-attr-only href="#" class="flex items-center gap-2.5 text-white/75 transition hover:text-brass-300"><i data-lucide="phone" class="h-4 w-4 shrink-0"></i><span data-site="phone">(813) 597-5980</span></a></li>
           <li><a data-site-href="https://" data-site-href-key="linkedin" data-site-attr-only href="#" target="_blank" rel="noopener" class="flex items-center gap-2.5 text-white/75 transition hover:text-brass-300"><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.83-2.06 3.76-2.06 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.48-2.19 3v5.8H9z"/></svg>LinkedIn</a></li>
         </ul>

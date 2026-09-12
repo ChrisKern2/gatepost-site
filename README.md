@@ -36,17 +36,25 @@ scroll to the part you're looking at and edit the words in place.
 
 ## Page structure
 
-1. Hero: 3 stacked lines and a summary panel of the criteria
-2. Credibility strip: 4 numbers
-3. Investment Criteria: 4 criteria blocks, then A Good Fit vs Out of Scope
-4. Target Industries: the 3 segments, with representative services
-5. How We Work: 5 commitments about behavior during a sale
-6. The Process: Phase 1 through Phase 4, with real timing
+The site now covers the Southeast pest control platform. The septic version
+is preserved under the git tag `septic-final` (`git checkout septic-final`).
+
+1. Hero: headline and an At a Glance panel of the criteria
+2. Credibility strip: 4 facts (majority, rollover, 5 days, 1 platform)
+3. The Thesis: why pest control and the Southeast, with sourced figures only
+4. Partnership: "Row together", the 3 platform stages, what the platform brings vs what stays yours
+5. Investment Criteria: 4 blocks (founding and partner company size), then A Good Fit vs Out of Scope
+6. Target Services: residential, commercial, termite and specialty
 7. About: photo carousel, contact details, and the bio
-8. Factsheet: a download card linking to the PDF
-9. Book a Meeting: the scheduler embed
-10. Contact: the form
-11. Footer
+8. How This Works: 5 commitments, including aligned interests through rollover
+9. The Process: 6 steps, ending with Row together after closing
+10. Factsheet: a download card linking to the PDF
+11. Book a Meeting: the scheduler embed
+12. Contact: the form
+13. Footer
+
+Keep returns, leverage, and the LP structure off this site. Those belong in the
+investor-facing thesis PDF, not a public page for owners and brokers.
 
 ## Common edits
 
@@ -99,9 +107,10 @@ worth swapping for a pre-built stylesheet. Nothing else about the site changes.
 ## The factsheet PDF
 
 The download button links straight to
-`assets/docs/Gatepost-Partners-Factsheet.pdf`. To publish a new version, export
-the PDF from `Marketing/Fact Sheet/` and overwrite that file, keeping the same
-filename. Nothing in the HTML needs to change.
+`assets/docs/Gatepost-Partners-Factsheet.pdf`. The pest control factsheet is
+built from `Pest Control/Marketing/Fact Sheet/gatepost-factsheet.html`: edit that
+page, print it to PDF (Letter, no margins, background graphics on), and
+overwrite this file, keeping the same filename. Nothing in the HTML needs to change.
 
 ## Connecting the Book a Meeting section
 
