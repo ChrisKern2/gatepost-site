@@ -40,8 +40,8 @@ The site now covers the Southeast pest control platform. The septic version
 is preserved under the git tag `septic-final` (`git checkout septic-final`).
 
 1. Hero: headline and an At a Glance panel of the criteria
-2. Credibility strip: 4 facts (majority, rollover, 5 days, 1 platform)
-3. The Thesis: why pest control and the Southeast, with sourced figures only
+2. Credibility strip: 4 facts (majority, partnership rollover, 5 days, 1 platform)
+3. The Thesis: why pest control, the Southeast, and partnership, kept general (no third-party company figures)
 4. Partnership: "Row together", the 3 platform stages, what the platform brings vs what stays yours
 5. Investment Criteria: 4 blocks (founding and partner company size), then A Good Fit vs Out of Scope
 6. Target Services: residential, commercial, termite and specialty
