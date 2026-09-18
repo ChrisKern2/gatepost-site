@@ -46,20 +46,23 @@ window.SITE = {
   formAccessKey: 'd0e88e01-b080-4a3b-a16b-3b384715d120',
 
   /* --- the acquisition mandate ------------------------------------------ *
-     Founding (platform) company bands match the pest CRM grading rubric
-     (Pest Control/pest-crm/src/lib/grading.ts). Revenue is EBITDA at an
-     ~18.5% small-scale margin, rounded. */
-  ebitdaRange: '$500,000 to $3,000,000',
-  revenueRange: '$2.5 million to $17 million',
-  partnerEbitdaRange: '$150,000 to $1,000,000',
-  industry: 'Residential and commercial pest control',
-  geography: 'The Carolinas, Virginia, and Tennessee',
+     Founding (anchor) company bands match the search CRM grading rubric
+     (Pest Control/pest-crm/src/lib/grading.ts, now the kitchen safety rubric).
+     The anchor profile is a $4-8 million revenue operator running 15% to 22%
+     EBITDA before any of the platform's levers, which is where the EBITDA band
+     below comes from. Partner companies are the $0.5-2.0 million operators
+     around it, at roughly a 15% margin. */
+  ebitdaRange: '$600,000 to $1,800,000',
+  revenueRange: '$4 million to $8 million',
+  partnerEbitdaRange: '$75,000 to $400,000',
+  industry: 'Commercial kitchen hood cleaning, grease trap and compliance services',
+  geography: 'Georgia, the Carolinas, and Tennessee',
 
   /* States listed in the Investment Criteria section. */
   states: [
+    'Georgia',
     'North Carolina',
     'South Carolina',
-    'Virginia',
     'Tennessee'
   ]
 };

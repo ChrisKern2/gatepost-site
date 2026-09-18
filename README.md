@@ -36,15 +36,15 @@ scroll to the part you're looking at and edit the words in place.
 
 ## Page structure
 
-The site now covers the Southeast pest control platform. The septic version
+The site now covers the Southeast commercial kitchen safety and grease trap platform. The pest control and septic versions
 is preserved under the git tag `septic-final` (`git checkout septic-final`).
 
 1. Hero: headline and an At a Glance panel of the criteria
 2. Credibility strip: 4 facts (majority, partnership rollover, 5 days, 1 platform)
-3. The Thesis: why pest control, the Southeast, and partnership, kept general (no third-party company figures)
+3. The Thesis: why kitchen safety work, the Southeast, and partnership, kept general (no third-party company figures)
 4. Partnership: "Row together", the 3 platform stages, what the platform brings vs what stays yours
 5. Investment Criteria: 4 blocks (founding and partner company size), then A Good Fit vs Out of Scope
-6. Target Services: residential, commercial, termite and specialty
+6. Target Services: hood and exhaust cleaning, grease trap and interceptor, kitchen safety and compliance
 7. About: photo carousel, contact details, and the bio
 8. How This Works: 5 commitments, including aligned interests through rollover
 9. The Process: 6 steps, ending with Row together after closing
@@ -107,8 +107,8 @@ worth swapping for a pre-built stylesheet. Nothing else about the site changes.
 ## The factsheet PDF
 
 The download button links straight to
-`assets/docs/Gatepost-Partners-Factsheet.pdf`. The pest control factsheet is
-built from `Pest Control/Marketing/Fact Sheet/gatepost-factsheet.html`: edit that
+`assets/docs/Gatepost-Partners-Factsheet.pdf`. The kitchen safety factsheet is
+built from `Commercial Kitchen Safety & Compliance/Marketing/Fact Sheet/gatepost-factsheet.html`: edit that
 page, print it to PDF (Letter, no margins, background graphics on), and
 overwrite this file, keeping the same filename. Nothing in the HTML needs to change.
 
