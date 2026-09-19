@@ -56,13 +56,13 @@ window.SITE = {
   revenueRange: '$2.5 million to $17 million',
   partnerEbitdaRange: '$75,000 to $400,000',
   industry: 'Commercial kitchen hood cleaning, grease trap and compliance services',
-  geography: 'Georgia, the Carolinas, and Tennessee',
+  geography: 'The Carolinas first, then Georgia and Tennessee',
 
   /* States listed in the Investment Criteria section. */
   states: [
-    'Georgia',
     'North Carolina',
     'South Carolina',
+    'Georgia',
     'Tennessee'
   ]
 };
