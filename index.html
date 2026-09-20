@@ -41,6 +41,58 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+<!-- Structured data: tells search engines, in machine-readable form, exactly what
+     this company is. Without it, Google guesses a title and description from the
+     page text, which is how an old positioning can linger in search results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gatepostpartners.com/#organization",
+      "name": "Gatepost Partners",
+      "url": "https://gatepostpartners.com/",
+      "logo": "https://gatepostpartners.com/apple-touch-icon.png",
+      "description": "Gatepost Partners is building a regional commercial kitchen hood cleaning, grease trap and compliance platform in the Southeast, starting in the Carolinas. Owners join as partners: cash at close, equity in the combined company, and the name stays on the truck.",
+      "email": "chris@gatepostpartners.com",
+      "telephone": "+1-813-597-5980",
+      "areaServed": [
+        { "@type": "State", "name": "North Carolina" },
+        { "@type": "State", "name": "South Carolina" },
+        { "@type": "State", "name": "Georgia" },
+        { "@type": "State", "name": "Tennessee" }
+      ],
+      "knowsAbout": [
+        "Commercial kitchen exhaust cleaning",
+        "NFPA 96 compliance",
+        "Grease trap and interceptor service",
+        "Kitchen fire safety compliance",
+        "Search fund and independent sponsor acquisitions"
+      ],
+      "founder": { "@id": "https://gatepostpartners.com/#chris-kern" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gatepostpartners.com/#chris-kern",
+      "name": "Chris Kern",
+      "jobTitle": "Founder",
+      "description": "Founder of Gatepost Partners, building a Southeast commercial kitchen hood cleaning, grease trap and NFPA 96 compliance platform with the owners who founded its companies.",
+      "email": "chris@gatepostpartners.com",
+      "worksFor": { "@id": "https://gatepostpartners.com/#organization" },
+      "sameAs": ["https://www.linkedin.com/in/chrishkern"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gatepostpartners.com/#website",
+      "url": "https://gatepostpartners.com/",
+      "name": "Gatepost Partners",
+      "publisher": { "@id": "https://gatepostpartners.com/#organization" }
+    }
+  ]
+}
+</script>
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -654,13 +706,14 @@
       <div class="lg:col-span-8">
         <div class="reveal space-y-6 text-[16.5px] leading-[1.8] text-stone-600">
           <p>
-            Chris runs a residential water treatment business, mostly softeners and filtration for
-            homes on private wells. The customers are homeowners, and the calls come when
-            something has gone wrong with water they cannot do without. Running it taught him what a
-            small service company depends on: a technician who shows up, a phone someone answers, and
-            enough route density to stay profitable at small ticket sizes. Commercial kitchen
-            cleaning runs on exactly those things, with the added strength of a fire code that tells
-            the customer how often to buy.
+            Chris is building Gatepost Partners around commercial kitchen safety because he
+            already runs a business that works the same way. He owns a residential water treatment
+            company, mostly softeners and filtration for homes on private wells, where the calls
+            come when something has gone wrong with water a customer cannot do without. Running it
+            taught him what a small field service company depends on: a technician who shows up, a
+            phone someone answers, and enough route density to stay profitable at small ticket
+            sizes. Commercial kitchen exhaust cleaning and grease trap service run on exactly those
+            things, with the added strength of a fire code that tells the customer how often to buy.
           </p>
           <p>
             He spent a handful of years as a private equity associate at a lower middle market firm investing in

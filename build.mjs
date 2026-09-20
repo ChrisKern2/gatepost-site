@@ -20,7 +20,10 @@ const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, '_deploy');
 
 const INCLUDE = ['index.html', 'robots.txt', 'sitemap.xml',
-                 'favicon.svg', 'apple-touch-icon.png'];
+                 'favicon.svg', 'apple-touch-icon.png',
+                 // Google Search Console ownership proof. Must be served at the
+                 // site root, byte for byte, or verification fails.
+                 'googled156a9807113d8bb.html'];
 const INCLUDE_DIRS = ['assets'];
 const SKIP_NAMES = new Set(['README.txt', 'README.md', '.DS_Store', 'Thumbs.db']);
 
