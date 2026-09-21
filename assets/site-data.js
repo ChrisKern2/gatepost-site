@@ -56,13 +56,10 @@ window.SITE = {
   revenueRange: '$2.5 million to $17 million',
   partnerEbitdaRange: '$75,000 to $400,000',
   industry: 'Commercial kitchen hood cleaning, grease trap and compliance services',
-  geography: 'The Carolinas first, then Georgia and Tennessee',
+  geography: 'Metro markets along the East Coast',
 
-  /* States listed in the Investment Criteria section. */
-  states: [
-    'North Carolina',
-    'South Carolina',
-    'Georgia',
-    'Tennessee'
-  ]
+  /* States listed in the Investment Criteria section. Leave this empty and the
+     section keeps the sentence written in index.html, which reads East Coast
+     rather than naming states. Fill it back in to list specific states. */
+  states: []
 };
